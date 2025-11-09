@@ -1,0 +1,7 @@
+doc/
+.travis.yml
+benchmark.c
+example*.c
+minctest.h
+repl.c
+smoke.c

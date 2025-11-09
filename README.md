@@ -6,7 +6,8 @@
 # TinyExpr
 
 TinyExpr is a very small recursive descent parser and evaluation engine for
-math expressions. It's handy when you want to add the ability to evaluate
+math expressions, by [Lewis Van Winkle](https://github.com/codeplea).
+It's handy when you want to add the ability to evaluate
 math expressions at runtime without adding a bunch of cruft to your project.
 
 In addition to the standard math operators and precedence, TinyExpr also supports
@@ -25,10 +26,32 @@ the standard C math functions and runtime binding of variables.
 - Easy to use and integrate with your code
 - Thread-safe, provided that your *malloc* is.
 
+## Installation
+
+Run:
+```bash
+$ npm i tinyexpr.c
+```
+
+And then include `tinyexpr.h` as follows:
+```c
+#include "node_modules/tinyexpr.c/tinyexpr.h"
+```
+
+You may also want to include `tinyexpr.c` as follows:
+```c
+#ifndef __TINYEXPR_C__
+#define __TINYEXPR_C__
+#include "node_modules/tinyexpr.c/tinyexpr.c"
+#endif
+```
+
+This will include both the function declaration and their definitions into a single file.
+
 ## Building
 
 TinyExpr is self-contained in two files: `tinyexpr.c` and `tinyexpr.h`. To use
-TinyExpr, simply add those two files to your project.
+TinyExpr, simply include those two files to your project.
 
 ## Short Example
 
@@ -317,3 +340,9 @@ then you can define `TE_NAT_LOG`.
   evaluation. If you instead compiled "x+1+5" TinyExpr will insist that "1" is
   added to "x" first, and "5" is added the result second.
 
+<br>
+<br>
+
+
+[![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/tinyexpr.c)
