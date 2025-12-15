@@ -1,0 +1,28 @@
+{
+  "name": "tinyexpr.c",
+  "version": "1.2024.4",
+  "description": "Tiny recursive descent expression parser, compiler, and evaluation engine for math expressions; Lewis Van Winkle (2016).",
+  "keywords": [
+    "c",
+    "library",
+    "math",
+    "expression",
+    "parser",
+    "evaluator",
+    "compiler"
+  ],
+  "homepage": "https://github.com/nodef/tinyexpr.c#readme",
+  "bugs": {
+    "url": "https://github.com/nodef/tinyexpr.c/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodef/tinyexpr.c.git"
+  },
+  "license": "Zlib",
+  "author": "wolfram77@gmail.com",
+  "main": "tinyexpr.h",
+  "scripts": {
+    "test": "bash build.sh test"
+  }
+}
