@@ -41,6 +41,7 @@ And then include `tinyexpr.h` as follows:
 
 ```c
 // main.c
+#define TINYEXPR_IMPLEMENTATION
 #include "node_modules/tinyexpr.c/tinyexpr.h"
 
 int main() { /* ... */ }
@@ -57,6 +58,7 @@ You may also use a simpler approach:
 
 ```c
 // main.c
+#define TINYEXPR_IMPLEMENTATION
 #include <tinyexpr.h>
 
 int main() { /* ... */ }
